@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <Button
+        android:id="@+id/buttonJobScheduler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewthreadCount"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:text="Get location by Job scheduler" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonJobScheduler">
+
+        <Button
+            android:id="@+id/buttonThreadStarter"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/string_startservice" />
+
+
+        <Button
+            android:id="@+id/buttonStopthread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonThreadStarter"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="@string/string_stopservice" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonServicer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Get location by Service" />
+
+
+   <!-- <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonServicer">
+
+        <Button
+            android:id="@+id/buttonServiceStarter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:text="@string/string_startservice" />
+
+
+        <Button
+            android:id="@+id/buttonServiceStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonServiceStarter"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="@string/string_stopservice" />
+
+    </RelativeLayout>-->
+
+
+    <TextView
+        android:id="@+id/textViewthreadCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Get Current location by Service/Job scheduler"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
